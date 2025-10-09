@@ -128,7 +128,7 @@ nav{
     opacity: 0;
     color: white;
     animation:fadeInOut 4s ease forwards ;
-}
+} 
 .intro-name{
     background: linear-gradient(45deg, #00d4ff, #9b59b6);
     -webkit-background-clip: text;
@@ -612,9 +612,10 @@ nav{
     /* border: 2px solid ; */
  }
  .service-top{
-    background-color: white ;
+    /* background-color: white ; */
+     background: rgba(255,255,255,0.3);
     padding: 30px 40px;
-    color: #111;
+    color: white;
     margin-bottom: 50px;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -630,7 +631,7 @@ nav{
     margin-bottom: 50px;
     letter-spacing: 0.02rem;
 }
-.service-top p{
+ .service-top p{
     font-size: 1.1rem;
     margin: 0 auto;
     line-height: 1.8rem;
@@ -794,4 +795,194 @@ nav{
         padding: 10px 0;
     }
 }
-/* projects */
+/* projects*/
+#projects {
+    padding: 80px 20px;
+    height: auto;
+    background: black;
+    position: relative;
+    text-align: center;
+}
+#projects::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+    radial-gradient(circle, rgba(255, 255, 255,1) 0%, transparent 50%),
+    radial-gradient(circle, rgba(255, 255, 255,1) 0%, transparent 50%),
+    radial-gradient(circle, rgba(255, 255, 255,0.9) 0%, transparent 50%),
+    radial-gradient(circle, rgba(255, 255, 255,0.9) 0%, transparent 50%),
+    radial-gradient(circle, rgba(255, 255, 255,0.7) 0%, transparent 50%),
+    radial-gradient(circle, rgba(255, 255, 255,0.8) 0%, transparent 50%),
+    radial-gradient(circle, rgba(255, 255, 255,0.9) 0%, transparent 50%),
+    radial-gradient(circle, rgba(255, 255, 255,1) 0%, transparent 50%),
+    radial-gradient(circle, rgba(255, 255, 255,1) 0%, transparent 50%);
+    background-size: 4px 4px,
+     4px 4px,
+     4px 4px,
+     4px 4px,
+     3px 3px,
+     3px 3px,
+     3px 3px,
+     3px 3px,
+     2px 2px
+    ;
+    background-position: 
+    20% 30%,    /* Position of 1st star */
+    60% 70%,    /* Position of 2nd star */
+    50% 50%,    /* Position of 3rd star */
+    80% 10%,    /* Position of 4th star */
+    90% 60%,
+    40% 30%,
+    70% 20%,
+    30% 80%,
+    38% 40%;  
+    background-repeat: no-repeat /* Position of 5th star */;
+    pointer-events: none;
+    animation: starsFloat 8s ease-in-out infinite;
+    z-index: 0;
+
+}
+#projects::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+       radial-gradient(circle, rgba(255, 255, 255, 0.8) 0%, transparent 50%),
+        radial-gradient(circle, rgba(255, 255, 255, 0.9) 0%, transparent 50%),
+        radial-gradient(circle, rgba(255, 255, 255, 1) 0%, transparent 50%),
+        radial-gradient(circle, rgba(255, 255, 255, 0.7) 0%, transparent 50%),
+        radial-gradient(circle, rgba(255, 255, 255, 0.9) 0%, transparent 50%); 
+    background-size: 3px 3px,
+        4px 4px,
+        2px 2px,
+        3px 3px,
+        3px 3px;
+    background-position: 
+        15% 80%,
+        40% 20%,
+        70% 90%,
+        30% 60%,
+        85% 40%;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    animation: starsFloat 12s ease-in-out infinite reverse;
+    z-index: 0;  
+}
+@keyframes starsFloat{
+    0%, 100%{
+        transform: translate(0,0) scale(1);
+        opacity: 1;
+    }
+    25%{
+        transform: translate(30px, -30px) scale(1.2);
+        opacity: 0.6;
+    }
+    50%{
+        transform: translate(-20px, 20px) scale(0.8);
+        opacity: 1;
+    }
+    75%{
+        transform: translate(25px, 10px) scale(1.1);
+        opacity: 0.7;
+    }
+}
+#projects .section-title{
+    font-size: 42px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+ /* grid  */
+ .project-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    justify-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 20px;
+ }
+ .project-card{
+    background: rgba(255,255,255,0.3);
+    border: 2px solid rgba(255, 255, 255, 0.1); 
+    border-radius: 16px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+    transition: all 0.3s ease;
+ }
+ .project-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+ }
+ .project-image{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+ }
+.project-content{
+    padding: 20px;
+}
+#projects .project-title{
+    font-size: 1.5rem;
+    border-bottom:2px solid black;
+    margin-bottom: 10px;
+}
+.project-desc{
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+.project-button{
+    display: flex;
+    gap: 10px;
+}
+.btn{
+    display: inline-block; 
+    /* hover woulnt work without inlline block as a is an inline element */
+    text-decoration: none ;
+    padding: 6px;
+    font-weight: 300;
+    transition: transform  0.3s ease-in-out;
+}
+.demo,.code{
+   /* background: black; */
+  background: rgba(255,255,255,0.1);
+    color: #fff;
+    border-radius: 4px;
+    font-size: small;
+   
+}
+.btn:hover{
+    transform: translateY(-3px);
+}
+@media (max-width: 768px){
+    .project-container{
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+@media (max-width:480px){
+    #projects{
+        padding: 50px 40px;
+    }
+    .demo,.code{
+        font-size: medium;
+    }
+    .project-button{
+        display: flex;
+        gap: 20px;
+    }
+    #projects .project-title{
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+    }
+    
