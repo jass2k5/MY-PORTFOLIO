@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my portfolio</title>
     <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- ====================================== 
@@ -20,7 +21,7 @@
         <div class="nav-links">
             <a href="#home">Home</a>
             <!-- <a href="#skills">Skills</a> -->
-            <a href="#can-build">Projects</a>
+            <a href="#services">Projects</a>
             <a href="#projects">My Work</a>
             <!-- <a href="#education">Education</a> -->
             <a href="#contact">Contacts</a>
@@ -98,46 +99,102 @@
       <!----========================================
          services section
       ==========================================-->
-        <section id="can-build">
-            <div class="services">
-                <!-- service top starts here  -->
-                <div class="service-top">
-                    <h1 class="section-title">services
-                    </h1>
-                    <p>At Jass, I focus on building visually striking and high-performing web experiences. From crafting responsive, modern front-end designs to optimizing performance and user interactivity, I aim to deliver websites that not only look stunning but also function seamlessly across all devices. Every project I take on is built with attention to detail, clean code, and a passion for creative problem-solving — ensuring that each client’s vision turns into a digital reality that stands out.
-                    </p>
+    <service id="services">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">What I Can Build</h2>
+          <p class="section-subtitle">Modern Solutions for modern problems</p>
+        </div>
+        <div class="services-container">
+          <!-- left column -->
+           <div class="service-column">
+             <div class="service-item">
+
+               <div class="service-header">
+                 <i class="fas fa-laptop-code service-icon"></i>
+                 <h3 class="service-title">Web Applications</h3>
                 </div>
-                <!-- service top ends here  -->
-                 <!-- service bottom starts here  -->
-                 <div class="service-bottom">
+                <ul class="service-list">
+                  <li>Responsive websites</li>
+                  <li>Single page apps</li>
+                  <li>E-commerce stores</li>
+                  <li>Admin dashboards</li>
+                </ul>
+              </div>
+             <div class="service-item">
+
+               <div class="service-header">
+                 <i class="fas fa-laptop-code service-icon"></i>
+                 <h3 class="service-title">UI/UX Design</h3>
+                </div>
+                <ul class="service-list">
+                  <li></li>
+                  <li>Modern interfaces</li>
+                  <li>Glassmorphism effects</li>
+                  <li>smooth animations</li>
+                  <li>Mobile-first design</li>
+                </ul>
+              </div>
+             <div class="service-item">
+
+               <div class="service-header">
+                 <i class="fas fa-laptop-code service-icon"></i>
+                 <h3 class="service-title">Backend Systems</h3>
+                </div>
+                <ul class="service-list">
+                  <li>RESTful APIs</li>
+                  <li>Database design</li>
+                  <li>Authentications</li>
+                  <li>Real-time features</li>
+                </ul>
+              </div>
+           </div>
+               <div class="divider"></div>
+
+                <!-- Right Column -->
+                <div class="service-column">
                     <div class="service-item">
-                       <div class="icon">
-                          <img src="img/icons8-website-48.png" alt="landing pages">
-                       </div>
-                       <h2>Landing Pages</h2>
-                       <p>Eye-catching, high-converting landing pages with smooth animations,
-                        responsive design, and optimized performnce's attention.
-                       </p>
+                        <div class="service-header">
+                            <i class="fas fa-star service-icon"></i>
+                            <h3 class="service-title">Special Features</h3>
+                        </div>
+                        <ul class="service-list">
+                            <li>Payment integration</li>
+                            <li>Chat systems</li>
+                            <li>File uploads</li>
+                            <li>Email notifications</li>
+                        </ul>
                     </div>
+
                     <div class="service-item">
-                       <div class="icon">
-                          <img src="img/icons8-business-50.png"alt="business websites">
-                       </div>
-                       <h2>business websites</h2>
-                       <p>Professional, modern business websites with contact forms, service pages, and SEO-friendly structure to establish your online presence.
-                       </p>
+                        <div class="service-header">
+                            <i class="fas fa-rocket service-icon"></i>
+                            <h3 class="service-title">Performance</h3>
+                        </div>
+                        <ul class="service-list">
+                            <li>SEO optimization</li>
+                            <li>Fast load times</li>
+                            <li>Code optimization</li>
+                            <li>Image compression</li>
+                        </ul>
                     </div>
+
                     <div class="service-item">
-                       <div class="icon">
-                          <img src="img/icons8-portfolio-50.png" alt="landing pages">
-                       </div>
-                       <h2>Portfolio Sites</h2>
-                       <p>Stunning portfolio websites for creatives and professionals to showcase their work with beautiful galleries and interactive elements.
-                       </p>
+                        <div class="service-header">
+                            <i class="fas fa-tools service-icon"></i>
+                            <h3 class="service-title">Tech Stack</h3>
+                        </div>
+                        <ul class="service-list">
+                            <li>React & Next.js</li>
+                            <li>Node.js & Express</li>
+                            <li>MongoDB & SQL</li>
+                            <li>Tailwind CSS</li>
+                        </ul>
                     </div>
-                 </div>
-            </div>
-        </section>
+                </div>
+        </div>
+      </div>
+    </service>
       <!----========================================
         end of services section
       ==========================================-->
