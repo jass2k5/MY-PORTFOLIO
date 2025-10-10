@@ -6,7 +6,7 @@
 }
 html,body{
     font-family: "Merriweaher", serif;
-      background: black;
+    background: black;
     /* color: #fff;+ */
     overflow-x: hidden;
 }
@@ -65,7 +65,7 @@ nav{
         .menu-toggle span {
             width: 25px;
             height: 3px;
-            background: #00d4ff;
+            background:  rgba(255, 255, 255, 0.6);
             border-radius: 3px;
             transition: all 0.3s;
         }
