@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 html,body{
-    font-family: "Merriweather", serif;
+    font-family: "Merriweaher", serif;
       background: black;
     /* color: #fff;+ */
     overflow-x: hidden;
@@ -32,6 +32,7 @@ nav{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: 2px;
+    font-family: "Montserrat", serif;
 }
 .nav-links{
     display: flex;
@@ -44,6 +45,7 @@ nav{
     font-weight: 500;
     border-radius: 5px;
     padding: 10px 45px;
+    font-family: "Montserrat", serif;
 }
 .nav-links a:hover{
     background: linear-gradient(45deg, #00d4ff, #9b59b6);
@@ -445,6 +447,7 @@ nav{
 .skill-name{
     font-size: 16px;
     font-weight: bold;
+    color: rgba(255, 255, 255, 0.6) ;
 }
 @keyframes scroll {
     0%{transform: translateX(0);}
@@ -1349,3 +1352,4 @@ nav{
     }
     
 }
+/* experiment */
