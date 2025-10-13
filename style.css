@@ -216,6 +216,30 @@ nav{
     }
 }
 @media (max-width: 768px){
+    .hero-video{
+        display: none;
+    }
+    .hero{
+        background-image: url(WhatsApp\ Image\ 2025-10-14\ at\ 01.06.12_9f78b433.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        z-index: 0;
+    }
+    .hero::after{
+        content: '';
+        top: 0;
+        left: 0;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        opacity: 0.7;
+        pointer-events: none;
+        z-index: 1;
+        
+    }
     .menu-toggle{
         display: flex;
     }
@@ -489,6 +513,59 @@ nav{
         .skill-name{
             font-size: 13px;
         }
+        #skills::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+    radial-gradient(circle, rgba(255, 255, 255,0.8) 0%, transparent 50%),
+    radial-gradient(circle, rgba(255, 255, 255,0.9) 0%, transparent 50%),
+    radial-gradient(circle, rgba(255, 255, 255,1) 0%, transparent 50%),
+    radial-gradient(circle, rgba(255, 255, 255,1) 0%, transparent 50%);
+    background-size: 
+     3px 3px,
+     3px 3px,
+     3px 3px,
+     2px 2px
+    ;
+    background-position: 
+    40% 30%,
+    70% 20%,
+    30% 80%,
+    38% 40%;  
+    background-repeat: no-repeat /* Position of 5th star */;
+    pointer-events: none;
+    animation: starsFloat 8s ease-in-out infinite;
+    z-index: 0;
+
+}
+#skills::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        radial-gradient(circle, rgba(255, 255, 255, 1) 0%, transparent 50%),
+        radial-gradient(circle, rgba(255, 255, 255, 0.7) 0%, transparent 50%),
+        radial-gradient(circle, rgba(255, 255, 255, 0.9) 0%, transparent 50%); 
+    background-size: 
+        2px 2px,
+        3px 3px,
+        3px 3px;
+    background-position: 
+        70% 90%,
+        30% 60%,
+        85% 40%;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    animation: starsFloat 12s ease-in-out infinite reverse;
+    z-index: 0;  
+}
 
     }
     @media (max-width: 480px){
