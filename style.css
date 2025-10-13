@@ -141,7 +141,7 @@ nav{
 }
 @keyframes fadeInOut {
     0%{opacity: 0; transform: translateY(20px);}
-    20%{opacity: 1; transform: translateY(0);}
+    20%{opacity: 1; transform: translateY(0); }
     80%{opacity: 1; transform: translateY(0);}
     100%{opacity: 0; transform: translateY(-20px
         );}
@@ -219,7 +219,15 @@ nav{
     .hero-video{
         display: none;
     }
+    .intro-text{
+    font-size: 48px;
+    margin-bottom: 20px;
+    opacity: 0;
+    color: white;
+    animation:fadeInOut 4s ease forwards ;
+} 
     .hero{
+        background-color: black;
         background-image: url(WhatsApp\ Image\ 2025-10-14\ at\ 01.06.12_9f78b433.jpg);
         background-repeat: no-repeat;
         background-position: center;
@@ -521,19 +529,13 @@ nav{
     width: 100%;
     height: 100%;
     background-image: 
-    radial-gradient(circle, rgba(255, 255, 255,0.8) 0%, transparent 50%),
-    radial-gradient(circle, rgba(255, 255, 255,0.9) 0%, transparent 50%),
     radial-gradient(circle, rgba(255, 255, 255,1) 0%, transparent 50%),
     radial-gradient(circle, rgba(255, 255, 255,1) 0%, transparent 50%);
     background-size: 
      3px 3px,
-     3px 3px,
-     3px 3px,
      2px 2px
     ;
     background-position: 
-    40% 30%,
-    70% 20%,
     30% 80%,
     38% 40%;  
     background-repeat: no-repeat /* Position of 5th star */;
@@ -551,15 +553,12 @@ nav{
     height: 100%;
     background-image:
         radial-gradient(circle, rgba(255, 255, 255, 1) 0%, transparent 50%),
-        radial-gradient(circle, rgba(255, 255, 255, 0.7) 0%, transparent 50%),
         radial-gradient(circle, rgba(255, 255, 255, 0.9) 0%, transparent 50%); 
     background-size: 
         2px 2px,
-        3px 3px,
         3px 3px;
     background-position: 
         70% 90%,
-        30% 60%,
         85% 40%;
     background-repeat: no-repeat;
     pointer-events: none;
@@ -1178,6 +1177,49 @@ nav{
     #about{
         padding: 90px;
     }
+    #about::after{
+      content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        radial-gradient(circle, rgba(255, 255, 255, 0.7) 0%, transparent 50%),
+        radial-gradient(circle, rgba(255, 255, 255, 0.9) 0%, transparent 50%); 
+    background-size: 
+        3px 3px,
+        3px 3px;
+    background-position: 
+        30% 60%,
+        85% 40%;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    animation: starsFloat 12s ease-in-out infinite reverse;
+    z-index: 0;  
+}
+#about::before{
+     content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+    radial-gradient(circle, rgba(255, 255, 255,1) 0%, transparent 50%),
+    radial-gradient(circle, rgba(255, 255, 255,1) 0%, transparent 50%);
+    background-size:
+     3px 3px,
+     2px 2px
+    ;
+    background-position: 
+    30% 80%,
+    38% 40%;  
+    background-repeat: no-repeat /* Position of 5th star */;
+    pointer-events: none;
+    animation: starsFloat 8s ease-in-out infinite;
+    z-index: 0;
+}
 
 }
 @media (max-width:480px){
@@ -1208,7 +1250,7 @@ nav{
     position: relative;
 }
 #contacts::after{
-    content: '';
+      content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -1234,10 +1276,10 @@ nav{
     background-repeat: no-repeat;
     pointer-events: none;
     animation: starsFloat 12s ease-in-out infinite reverse;
-    z-index: 0; 
+    z-index: 0;  
 }
 #contacts::before{
-    content: '';
+     content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -1278,6 +1320,7 @@ nav{
     animation: starsFloat 8s ease-in-out infinite;
     z-index: 0;
 }
+
 #contacts .section-title{
     font-size: 1.5rem;
     /* border-bottom: none; */
@@ -1346,6 +1389,50 @@ nav{
    .contact-name a{
     font-size: 1.3rem;  
 }
+#contacts::after{
+      content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        radial-gradient(circle, rgba(255, 255, 255, 0.7) 0%, transparent 50%),
+        radial-gradient(circle, rgba(255, 255, 255, 0.9) 0%, transparent 50%); 
+    background-size: 
+        3px 3px,
+        3px 3px;
+    background-position: 
+        30% 60%,
+        85% 40%;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    animation: starsFloat 12s ease-in-out infinite reverse;
+    z-index: 0;  
+}
+#contacts::before{
+     content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+    radial-gradient(circle, rgba(255, 255, 255,1) 0%, transparent 50%),
+    radial-gradient(circle, rgba(255, 255, 255,1) 0%, transparent 50%);
+    background-size:
+     3px 3px,
+     2px 2px
+    ;
+    background-position: 
+    30% 80%,
+    38% 40%;  
+    background-repeat: no-repeat /* Position of 5th star */;
+    pointer-events: none;
+    animation: starsFloat 8s ease-in-out infinite;
+    z-index: 0;
+}
+
 }
 
 @media (max-width:490px){
