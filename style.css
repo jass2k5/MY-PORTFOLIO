@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    /* scroll-behavior: smooth; already handeled by js in html file */
+}
 html,body{
     font-family: "Merriweather", serif;
     background: black;
@@ -380,7 +383,7 @@ nav{
     70% 20%,
     30% 80%,
     38% 40%;  
-    background-repeat: no-repeat /* Position of 5th star */;
+    background-repeat: no-repeat;
     pointer-events: none;
     animation: starsFloat 8s ease-in-out infinite;
     z-index: 0;
