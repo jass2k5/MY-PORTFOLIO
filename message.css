@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Merriweather", serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden;
+    position:relative;
+    background-image: url(img/wallpaperflare.com_wallpaper\ \(17\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+}
+#container{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+   -webkit-backdrop-filter: blur(10px);  /*.for safari and older chrom */
+   border-radius: 20px;
+   border: 1px solid rgba(255, 255, 255, 0.2);
+   width: 100%;
+   max-width: 500px;
+   position: relative;
+   z-index: 1 ;
+   box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+   padding: 40px;
+}
+h1{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+p{
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.95rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.contact-form{
+    margin-bottom: 20px;
+}
+label{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+input,textarea{
+    width: 100%;
+    padding: 12px 16px;
+    background: rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+}
+input::placeholder, textarea::placeholder{
+    color: rgba(255, 255, 255, 0.6);
+}
+input:focus,textarea:focus{
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+
+}
+textarea{
+    resize: vertical;
+    min-height: 120px;
+    max-height: 300px;
+    font-family: inherit;
+}
+.btn-submit{
+    width: 100%;
+    padding: 14px;
+    background: rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    color: white;
+    font-size: 1 rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all o.3s ease;
+    margin-top: 10px;
+}
+.btn-submit:hover{
+    background: rgba(255, 255, 255, 0.35);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
