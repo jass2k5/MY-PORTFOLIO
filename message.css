@@ -90,9 +90,28 @@ textarea{
     cursor: pointer;
     transition: all o.3s ease;
     margin-top: 10px;
+    border-bottom: 20px;
 }
 .btn-submit:hover{
     background: rgba(255, 255, 255, 0.35);
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+@media(max-width:480px){
+ h1{
+    font-size: 1.5rem;
+
+ }
+ p{
+    font-size: 1rem;
+ }
+ label{
+    font-size: 0.7rem;
+ }
+ input,textarea{
+    font-size: 0.8rem;
+ }
+ .btn-submit{
+    font-size: 0.8rem;
+ }
 }
